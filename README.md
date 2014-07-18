@@ -13,4 +13,6 @@ In each terminal, import the module and connect to other nodes:
 
 In any terminal, tell the leader to start the hot potato!
 
+    iex> start
+
 Be sure to replace `localhost` with the IP address or host name of the node in the cluster. Also, make sure to supply unique names within the entire cluster or the application will fail to start.
