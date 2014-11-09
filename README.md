@@ -3,13 +3,13 @@ Hot Potato
 
 Run in three or more (minimum 2) terminals with different names:
 
-    $ iex --name w1@localhost -S mix
-    $ iex --name w2@localhost -S mix
-    $ iex --name w3@localhost -S mix
+    $ iex --name w1@127.0.0.1 -S mix
+    $ iex --name w2@127.0.0.1 -S mix
+    $ iex --name w3@127.0.0.1 -S mix
 
 In each terminal, import the module and connect to other nodes:
 
-    iex> import HotPotato.PotatoWorker; Node.connect :"w1@localhost"
+    iex> import HotPotato.PotatoWorker; Node.connect :"w1@127.0.0.1"
 
 In any terminal, tell the leader to start the hot potato!
 
